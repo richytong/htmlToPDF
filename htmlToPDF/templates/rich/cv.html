@@ -1,0 +1,99 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'rich/css/cv.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <h2>Richard Tong</h2>
+                <p>
+                    12985 Seabreeze Farms Dr, San Diego, CA, 92130<br>
+                    richytong@gmail.com<br>
+                    (858)688-3603
+                </p>
+            </div>
+            <br>
+            <div class="section">
+                <h4>EDUCATION</h4>
+                <div class="section-content">
+                    <p><b>University of California, Davis (Davis, CA)</b></p>
+                    <ul>
+                        <li>B.S. Biomedical Engineering</li>
+                        <li>B.S. Computer Science (minor)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h4>WORK EXPERIENCE</h4>
+                <div class="section-content">
+                    <p>
+                        <b>Instigate.ai</b> (San Francisco, CA)<br>
+                        Full Stack Software Developer, January 2017 - Current
+                    </p>
+                    <ul>
+                        <li>
+                            Built a server using Django 1.10.4 that interfaced with another server built using NodeJS 4.1.2. Both servers worked to deliver responses for a Facebook chatbot.
+                        </li>
+                        <li>
+                            The Django server was the brain of the chatbot. Built a method here to transcribe video and audio mp4 messages to text using Google Cloud Speech API. Implemented a state machine using a PostgresQL database (for storing states among other datasets) and Python object-oriented programming to facilitate the chatbot's business logic.
+                        </li>
+                        <li>
+                            The NodeJS server was a connector between Facebook GraphAPI and the Django server. This server received many different kinds of requests from GraphAPI and sent data and metadata for these requests to the Django server. On response from the Django server, the NodeJS server interfaced with Facebook GraphAPI to deliver a message to a user.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-content">
+                    <p>
+                        <b>ProductBio</b> (San Francisco, CA)<br>
+                        Full Stack Software Developer, April 2016 - Current
+                    </p>
+                    <ul>
+                        <li>
+                            Built from the ground up the flagship web application in Python Django 1.10.4 and Angular 1.6.2, writing ~90% of the code.
+                        </li>
+                        <li>
+                            Wrote front-end using Angular MVC techniques. This involved passing large javascript objects from a Django context to Angular controllers. Most views required handling dynamic data and displays - updating the model and utilizing Angular data binding accomplished this easily. Utilized a handful of Angular Material directives (such as md-button, md-navbar) because they looked good and had many responsive features built in.
+                        </li>
+                        <li>
+                            Set up data storage using a PostgreSQL database on an AWS Relational Database Service. Utilized Django ORM (for simpler queries) and cursors (for more complex queries) to call many-to-many data relations. Queries were further abstracted using object-oriented programming.
+                        </li>
+                        <li>
+                            Set up an automated deployment pipeline using fabric3, Docker, and awscli. Pipeline involved building a docker image around a gunicorn webserver running the Django application, then pushing the image to an AWS EC2 Container Service repository. From there, utilized awscli to deploy the application to an AWS Elastic Beanstalk instance from the console.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h4>SKILLS</h4>
+                <div class="section-content">
+                    <p>
+                        <b>Programming Languages</b>
+                        Python, Javascript, SQL, C++
+                    </p>
+                    <p>
+                        <b>Front-end Technologies</b>
+                        AngularJS, jQuery
+                    </p>
+                    <p>
+                        <b>Back-end Technologies</b>
+                        Django, NodeJS, NLTK, Typescript
+                    </p>
+                    <p>
+                        <b>Database Technologies</b>
+                        PostgreSQL, sqlite3
+                    </p>
+                    <p>
+                        <b>DevOps Technologies</b>
+                        Git, Docker, AWS(Elastic Beanstalk, RDS, S3, EC2, VPC), OpenVPN Access Server
+                    </p>
+                    <p>
+                        This CV was written in HTML and converted to PDF using Django Templates and Weasyprint, source code available upon request.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

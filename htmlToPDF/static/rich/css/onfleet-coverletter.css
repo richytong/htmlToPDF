@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6, p, b, li {
+	font-family: Calibri;
+}
+p, li {
+	font-size: 12px;
+}
+li {
+	margin-bottom: 10px;
+}
+.container {
+	width: 600px;
+	margin: auto;
+}
+.section > .section-content {
+	/*margin-left: 50px;*/
+}
+#header {
+	text-align: center;
+}

@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6, p, b, li {
+	font-family: Calibri;
+}
+p, li {
+	font-size: 11px;
+}
+li {
+	margin-bottom: 10px;
+}
+.container {
+	width: 600px;
+	margin: auto;
+}
+.section {
+
+}
+.section > .section-content {
+	margin-left: 50px;
+}
+
+#header > * {
+	display: inline;
+	margin: 0;
+}
+#header > h1 {
+	font-size: 32px;
+	float: left;
+}
+#header > p {
+	float: right;
+	text-align: right;
+	line-height: 1.5em;
+}
