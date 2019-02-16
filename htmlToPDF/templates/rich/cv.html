@@ -10,88 +10,113 @@
             <div id="header">
                 <h2>Richard Tong</h2>
                 <p>
-                    12985 Seabreeze Farms Dr, San Diego, CA, 92130<br>
                     richytong@gmail.com<br>
                     (858)688-3603
                 </p>
             </div>
-            <br>
             <div class="section">
-                <h4>EDUCATION</h4>
+                <h5>WORK EXPERIENCE</h5>
+                <div class="section-content">
+                    <p>
+                        <b>Honey</b> (Los Angeles, CA) - Browser extension that applies coupons automatically at checkout<br>
+                        Senior Software Engineer, August 2017 - Present<br>
+                        Tech stack: GCP, MySQL, BigTable, Spanner, Kubernetes, Docker, GraphQL, Google Pubsub, NodeJS, React
+                    </p>
+                    <ul>
+                        <li>
+                            Performed ETL operations using NodeJS scripts for the data migration from GCP CloudSQL to GCP Spanner on the core team, a backend team focused on system performance, monitoring, and reliability.
+                        </li>
+                        <li>
+                            Created the entry point for the product images acquisition pipeline in Honey Extension written in Javascript while working across domains with the data team.
+                        </li>
+                        <li>
+                            Became the de facto authority on a sub system of the Honey Backends, the payouts system. Faciliated change in a chaotic system when new feature requests came in while migrations were still underway. Created teaching materials and diagrams to help onboard other engineers into the system.
+                        </li>
+                        <li>
+                            Upgraded existing distributed NodeJS backends to use GraphQL with guidance from one of the creators of GraphQL on the team. Isolated all backend calls behind the GQL implementation and removed any unnecessary direct-to-database calls. Set up monitoring for the GraphQL schema.
+                        </li>
+                        <li>
+                            Upgraded React website and extension as part of account management system upgrade. These projects spanned the full stack. Also fixed various bugs as they arose in both clients.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-content">
+                    <p>
+                        <b>Instigate.ai</b> (San Francisco, CA) - Platform for creating and sharing storytelling chatbots<br>
+                        Lead Software Engineer, June 2015 - August 2017<br>
+                        Tech stack: AWS, PostgreSQL, Docker, NodeJS, Facebook Graph/Messenger UI
+                    </p>
+                    <ul>
+                        <li>
+                            Built the alpha of an authoring platform for users to share stories by creating and training their own chatbots. Differentiated the platform into microservices built with Python Django and NodeJS.
+                        </li>
+                        <li>
+                            Designed the 'brain' service of the platform. Built a method to transcribe video and audio mp4 messages to text using Google Cloud Speech API. Implemented a state machine using a PostgresQL database (for storing states among other datasets) linked to a distributed RESTful application layer that integrated with Facebook Graph API to reach Facebook Messenger.
+                        </li>
+                        <li>
+                            Designed and implemented a distributed system architecture. Set up persistence with a PostgreSQL database on AWS Relational Database Service and managed distribution and load balancing with AWS Elastic Container Service.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-content">
+                    <p>
+                        <b>ProductBio</b> (San Francisco, CA) - SaaS for large entities to track their sustainability<br>
+                        Principal Software Engineer, July 2013 - June 2015<br>
+                        Tech stack: AWS, PostgreSQL, Docker, Python Django, AngularJS
+                    </p>
+                    <ul>
+                        <li>
+                            Worked on a cross-functional team implementing agile project management strategies. Designed and built the monolithic MVP SaaS in Python Django that was adopted by the City of Palo Alto, ProductBio's first client.
+                        </li>
+                        <li>
+                            Boiled down high level requirements from designer, CEO, and other stakeholders to engineering tasks.
+                        </li>
+                        <li>
+                            Oriented and mentored new analysts and engineers as they joined the team.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-content">
+                    <p>
+                        <b>Jukebaux</b> (Los Angeles, CA) - Social network for music sharing<br>
+                        Founding Software Engineer, August 2012 - July 2013<br>
+                        Tech stack: AWS, PostgreSQL, NodeJS, iOS Native
+                    </p>
+                    <ul>
+                        <li>
+                            Optimized and extended existing NodeJS monolith REST api and integrated existing systems with external apis from Spotify and Soundcloud.
+                        </li>
+                        <li>
+                            Developed native iOS mobile application in Objective-C.
+                        </li>
+                        <li>
+                            Built internal tooling, chiefly an admin portal that enabled account management.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h5>Projects</h5>
+                <div class="section-content">
+                    <p>
+                        <b>React Universal Boilerplate</b>
+                        Stable July 7, 2018. A boilerplate for Universal Javascript, that is Javascript that will render in the server and route in the client.<br>
+                        <i>https://github.com/richytong/react-universal-boilerplate</i>
+                    </p>
+                </div>
+                <div class="section-content">
+                    <p>
+                        <b>Django Boilerplate with Python 3.6.1</b>
+                        Stable July 15, 2017. A Django Boilerplate serving a Docker container running Gunicorn behind an Nginx reverse proxy that quickly encapsulates a django project. This project uses Fabric3 to handle most of the deployment and administration tasks.<br>
+                        <i>https://github.com/richytong/django-boilerplate-3.6.1</i>
+                    </p>
+                </div>
+            </div>
+            <div class="section">
+                <h5>EDUCATION</h5>
                 <div class="section-content">
                     <p><b>University of California, Davis (Davis, CA)</b></p>
-                    <ul>
-                        <li>B.S. Biomedical Engineering</li>
-                        <li>B.S. Computer Science (minor)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <h4>WORK EXPERIENCE</h4>
-                <div class="section-content">
-                    <p>
-                        <b>Instigate.ai</b> (San Francisco, CA)<br>
-                        Full Stack Software Developer, January 2017 - Current
-                    </p>
-                    <ul>
-                        <li>
-                            Built a server using Django 1.10.4 that interfaced with another server built using NodeJS 4.1.2. Both servers worked to deliver responses for a Facebook chatbot.
-                        </li>
-                        <li>
-                            The Django server was the brain of the chatbot. Built a method here to transcribe video and audio mp4 messages to text using Google Cloud Speech API. Implemented a state machine using a PostgresQL database (for storing states among other datasets) and Python object-oriented programming to facilitate the chatbot's business logic.
-                        </li>
-                        <li>
-                            The NodeJS server was a connector between Facebook GraphAPI and the Django server. This server received many different kinds of requests from GraphAPI and sent data and metadata for these requests to the Django server. On response from the Django server, the NodeJS server interfaced with Facebook GraphAPI to deliver a message to a user.
-                        </li>
-                    </ul>
-                </div>
-                <div class="section-content">
-                    <p>
-                        <b>ProductBio</b> (San Francisco, CA)<br>
-                        Full Stack Software Developer, April 2016 - Current
-                    </p>
-                    <ul>
-                        <li>
-                            Built from the ground up the flagship web application in Python Django 1.10.4 and Angular 1.6.2, writing ~90% of the code.
-                        </li>
-                        <li>
-                            Wrote front-end using Angular MVC techniques. This involved passing large javascript objects from a Django context to Angular controllers. Most views required handling dynamic data and displays - updating the model and utilizing Angular data binding accomplished this easily. Utilized a handful of Angular Material directives (such as md-button, md-navbar) because they looked good and had many responsive features built in.
-                        </li>
-                        <li>
-                            Set up data storage using a PostgreSQL database on an AWS Relational Database Service. Utilized Django ORM (for simpler queries) and cursors (for more complex queries) to call many-to-many data relations. Queries were further abstracted using object-oriented programming.
-                        </li>
-                        <li>
-                            Set up an automated deployment pipeline using fabric3, Docker, and awscli. Pipeline involved building a docker image around a gunicorn webserver running the Django application, then pushing the image to an AWS EC2 Container Service repository. From there, utilized awscli to deploy the application to an AWS Elastic Beanstalk instance from the console.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <h4>SKILLS</h4>
-                <div class="section-content">
-                    <p>
-                        <b>Programming Languages</b>
-                        Python, Javascript, SQL, C++
-                    </p>
-                    <p>
-                        <b>Front-end Technologies</b>
-                        AngularJS, jQuery
-                    </p>
-                    <p>
-                        <b>Back-end Technologies</b>
-                        Django, NodeJS, NLTK, Typescript
-                    </p>
-                    <p>
-                        <b>Database Technologies</b>
-                        PostgreSQL, sqlite3
-                    </p>
-                    <p>
-                        <b>DevOps Technologies</b>
-                        Git, Docker, AWS(Elastic Beanstalk, RDS, S3, EC2, VPC), OpenVPN Access Server
-                    </p>
-                    <p>
-                        This CV was written in HTML and converted to PDF using Django Templates and Weasyprint, source code available upon request.
-                    </p>
+                    <p>B.S. Biomedical Engineering with Coursework in Computer Science, GPA 3.5</p>
                 </div>
             </div>
         </div>

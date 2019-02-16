@@ -1,21 +1,24 @@
 h1, h2, h3, h4, h5, h6, p, b, li {
 	font-family: Calibri;
 }
+h5 {
+	margin-bottom: -2px;
+}
 p, li {
-	font-size: 11px;
+	font-size: 10px;
+}
+ul {
+	margin-top: -5px;
 }
 li {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 .container {
 	width: 600px;
 	margin: auto;
 }
-.section {
-
-}
 .section > .section-content {
-	margin-left: 50px;
+	margin-left: 20px;
 }
 
 #header > * {
