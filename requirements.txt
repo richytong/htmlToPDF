@@ -1,5 +1,5 @@
 cairocffi==0.7.2
-CairoSVG==2.0.0
+CairoSVG==2.5.1
 cffi==1.9.1
 cssselect==1.0.0
 dj-static==0.0.6
