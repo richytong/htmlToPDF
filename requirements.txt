@@ -6,7 +6,7 @@ dj-static==0.0.6
 Django==2.2.24
 gunicorn==19.6.0
 html5lib==0.999999999
-lxml==4.6.3
+lxml==4.6.5
 numpy==1.11.2
 pandas==0.19.1
 Pillow==8.3.2
