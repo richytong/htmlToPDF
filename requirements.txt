@@ -3,7 +3,7 @@ CairoSVG==2.5.1
 cffi==1.9.1
 cssselect==1.0.0
 dj-static==0.0.6
-Django==2.2.26
+Django==2.2.28
 gunicorn==19.6.0
 html5lib==0.999999999
 lxml==4.6.5
